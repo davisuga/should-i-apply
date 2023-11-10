@@ -17,19 +17,19 @@
 - Autoreloads Browser
 - Isolated Browser Profiles
 
- ## Commands
+## Commands
 
 ```sh
 # Install packages
-npm install
+pnpm install
 
 # Live Dev for multiple browsers
-npm run start [browser]
-# npm run start chrome firefox safari
+pnpm run start [browser]
+# pnpm run start chrome firefox safari
 
 # Build for multiple browsers
-npm run build [browser]
-# npm run build chrome firefox safari
+pnpm run build [browser]
+# pnpm run build chrome firefox safari
 ```
 
 That's it, if you got the browsers in the start command installed, it automatically builds for that, starts all of them, loads the extensions and reloads them on change. ESBuild makes sure the builds and reloads are really fast.
@@ -55,14 +55,15 @@ Scripts & Pages (located in `src/pages`):
 - history
 - options
 - popup
-- bookmarks  
-- devtools   
+- bookmarks
+- devtools
 - newtab
 - panel
 
 Just delete the folders of pages you don't require, the builds scripts detects automatically what's in there and adjusts the manifest automatically.
 
 Browsers:
+
 - arc
 - brave
 - chrome
